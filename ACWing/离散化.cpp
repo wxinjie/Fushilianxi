@@ -38,7 +38,7 @@ int find(int x)
 output
 8
 0
--8
+5
 */
 #include<iostream>
 #include<vector>
@@ -61,7 +61,7 @@ int find(int x)
 	int l = 0, r = alls.size() - 1;
 	while(l < r)
 	{
-		int mid = l + (r - l) / 2;
+		int mid = (l + r) / 2;
 		if(alls[mid] >= x) r = mid;
 		else l = mid + 1;
 	}

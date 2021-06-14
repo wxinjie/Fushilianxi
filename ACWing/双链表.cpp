@@ -41,7 +41,7 @@ void add(int k, int x)
 	l[r[idx]] = idx++;	
 }
 
-//删除下标是k的结点
+//将下标是k的点的后面结点删掉
 void remove(int k)
 {
 	r[l[k]] = r[k];
@@ -67,7 +67,7 @@ int main()
 		{
 			cin >> k;
 			if(!k) r[0] = r[r[0]], l[r[0]] = 0;
-			remove(r[k + 1]);
+			remove(r[k + 1]);            //???
 		}
 		else 
 		{
